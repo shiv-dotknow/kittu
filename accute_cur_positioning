@@ -1,0 +1,23 @@
+<html lang="en" charset="utf-8">
+  <head>
+    <title>Moving cursor position to accurate index in a Textarea</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+      textarea.workingTA {
+        display: block; resize: none; border-radius: 5px; white-space: nowrap; overflow: hidden; padding: 10px; 
+      }
+    </style>
+  </head>
+  <body>
+    <textarea class="workingTA" cols="35"></textarea>
+    <textarea class="workingTA" cols="35"></textarea>
+    <textarea class="workingTA" cols="35"></textarea>
+    <textarea class="workingTA" cols="35"></textarea>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('textarea.workingTA').focus();
+      $('textarea.workingTA').focus();
+    });
+  </script>
+</html>
